@@ -17,11 +17,6 @@ class Profile(models.Model):
     def delete_user(self):
         self.delete()
 
-    
-    # @classmethod
-    # def update_profile(cls, id, value):a
-    # cls.objects.filter(id=id).update(profile_name=value)
-
    
     def __str__(self):
         return f'{self.user.username} Profile'

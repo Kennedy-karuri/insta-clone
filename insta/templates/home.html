@@ -2,7 +2,7 @@
 {%block content%}
 {{ block.super}}
 
-
+<div class="post">
   <div class="container" style="margin-top: 100px;">
     {%for new_post in posts %}
     <div>
@@ -38,6 +38,7 @@
       </div>
     </div><br><br>
   </div>
+</div>
 
   {% endfor %}
 </div>

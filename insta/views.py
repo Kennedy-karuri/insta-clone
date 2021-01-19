@@ -120,21 +120,13 @@ def new_post(request):
         form = NewPostForm()
     return render(request, 'new_post.html', {"form": form})
 
-
-
-
-
-
-
-
-
-# def likes(request):
-#     postLike_id = None
-#     if requst.method == "GET":
-#         postLike = Post.objects.get(id = int(postLike_id))
-#         if postLike:
-#             likes = postLike.likes + 1
-#             postLike.likes = likes
-#             postLike.save()
-#     return HttpResponse(likes)
+def likes(request):
+    postLike_id = None
+    if requst.method == "GET":
+        postLike = Post.objects.get(id = int(postLike_id))
+        if postLike:
+            likes = postLike.likes + 1
+            postLike.likes = likes
+            postLike.save()
+    return HttpResponse(likes)
         

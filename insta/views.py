@@ -29,7 +29,7 @@ def home(request):
             avatar=pic,
             name=post.title,
             caption=post.caption
-            # likes = post.likes
+           
 
         )
         json_posts.append(obj)

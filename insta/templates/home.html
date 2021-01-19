@@ -21,17 +21,17 @@
 
           <div class="card-body">
 
-            <h3>{{new_post.name}}</h3>
-            <p> <b>{{new_post.author}} </b>{{new_post.caption}}</p>
+            <h3 style="text-align: center;">{{new_post.name}}</h3>
+            <p style="text-align: center;"> <b>{{new_post.author}} </b>{{new_post.caption}}</p>
           </div>
 
           
 
           <div class="card-footer">
-         <a href=""style="color: black;padding-left: 50px;"> <span class="info"><i class="far fa-heart fa-1x" ></i></span>  </a>
-       <a href=""style="color: black;padding-left: 50px;"><i class="far fa-comment"></i></a>  
+         <a href=""style="color: black;padding-left: 200px;"> <span class="info"><i class="far fa-heart fa-1x" ></i></span>  </a>
+       <a href=""style="color: black;padding-left: 200px;"><i class="far fa-comment"></i></a>  
 
-            <a href="" style="color: black;padding-left: 50px;"><i class="far fa-paper-plane"></i></a>
+            <a href="" style="color: black;padding-left: 200px;"><i class="far fa-paper-plane"></i></a>
 
           </div>
         </div>
@@ -40,10 +40,14 @@
   </div>
 </div>
 
+
   {% endfor %}
-</div>
-</div>
 
 
+<style>
+  .post{
+    text-align: center;
+  }
+</style>
 
 {%endblock%}

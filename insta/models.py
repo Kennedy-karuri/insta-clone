@@ -50,10 +50,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    @property
-    def num_likes(self):
-        return self.liked.all.count()
-
+    
 
 
 
